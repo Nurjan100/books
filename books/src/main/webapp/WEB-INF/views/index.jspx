@@ -1,0 +1,33 @@
+<div 	xmlns:c="http://java.sun.com/jsp/jstl/core"
+		xmlns:spring="http://www.springframework.org/tags" 
+		xmlns:util="urn:jsptagdir:/WEB-INF/tags/util" 
+		xmlns:jsp="http://java.sun.com/JSP/Page" 
+		version="2.0">
+		
+  <jsp:directive.page contentType="text/html;charset=UTF-8" />
+  <jsp:output omit-xml-declaration="yes" />
+  <spring:message var="app_name" code="application_name" htmlEscape="false" />
+  <spring:message var="title" code="welcome_titlepane" arguments="${app_name}" htmlEscape="false" />
+  <util:panel id="title" title="${title}">
+    <h3>
+      <spring:message code="welcome_h3" arguments="${app_name}" />
+    </h3>
+  <table width="100%" border="1">
+  <c:forEach items="${data}" var="item">
+  <tr>
+    <td width="210"><a href="${item['bookPlace']}" target="_blank"><img src="${item['cover']}" /></a></td>
+    <td valign="top"><strong>Автор</strong>: ${item['author']}<br/>
+      <strong>Название</strong>: ${item['title']}<br/>
+      <strong>Издательство</strong>: ${item['publishing']}<br/>
+      <strong>Год</strong>: ${item['publicationYear']}<br/>
+      <strong>Количество страниц</strong>: ${item['pagesCount']}<br/>
+      <strong>Формат</strong>: ${item['fileFormat']}<br/>
+      <strong>Размер</strong>: ${item['fileSize']}<br/>
+      <strong>ISBN</strong>: ${item['isbn']}<br/>
+      <strong>Аннотация</strong>: ${item['description']}<br/>
+    </td>
+  </tr>
+  </c:forEach>
+  </table>
+  </util:panel>
+</div>

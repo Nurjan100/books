@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_bmtech_books_domain_Book" items="${books}" z="Uvcw1gj8AUgDGL1OUQ6tBcrcAb4=">
+        <table:table data="${books}" id="l_com_bmtech_books_domain_Book" path="/books" z="Uo5g4KAgs5QWEfvm+aLFZpi1Fno=">
+            <table:column id="c_com_bmtech_books_domain_Book_categoryId" property="categoryId" z="i34YA7/hsdm4jCkXrw5ER2ZcwvE="/>
+            <table:column id="c_com_bmtech_books_domain_Book_sectionId" property="sectionId" z="872nmrzYaztGINE/SWTMuguq89s="/>
+            <table:column id="c_com_bmtech_books_domain_Book_cover" property="cover" z="ecP0Xop9G3VELte4ndoO/1Nri4A="/>
+            <table:column id="c_com_bmtech_books_domain_Book_title" property="title" z="XcgfhLwVHk4JJst7tjC4CvbC/Fs="/>
+            <table:column id="c_com_bmtech_books_domain_Book_author" property="author" z="P0ujyHPUYtNQiSxaNhh6oStvSbI="/>
+            <table:column id="c_com_bmtech_books_domain_Book_publishing" property="publishing" z="PylKSC249Ms8aLh1bi8asWpubZY="/>
+        </table:table>
+    </page:list>
+</div>

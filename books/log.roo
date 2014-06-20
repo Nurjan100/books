@@ -1,0 +1,57 @@
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-06-16 17:44:16
+project --topLevelPackage com.bmtech.books --projectName books --java 6 --packaging JAR
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-06-16 17:44:33
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-06-16 17:48:24
+osgi update --bundleSymbolicName com.xsoftwarelabs.spring.roo.addon.typicalsecurity --url file:///D:\com.xsoftwarelabs.spring.roo.addon.typicalsecurity-0.2.0.BUILD-SNAPSHOT.jar
+osgi update --bundleSymbolicName com.xsoftwarelabs.spring.roo.addon.typicalsecurity --url file:///D:\com.xsoftwarelabs.spring.roo.addon.typicalsecurity-0.2.0.BUILD-SNAPSHOT.jar
+osgi ps
+jpa setup --provider HIBERNATE --database MYSQL
+entity jpa --class ~.domain.Book --testAutomatically
+field number --fieldName categoryId --type java.lang.Long --comment "ID of book category"
+field number --fieldName sectionId --type java.lang.Long  --comment "ID of book section"
+field string --fieldName cover --sizeMax 100 --comment "Web-link to cover picture"
+field string --fieldName title --comment "Title of book"
+field string --fieldName author --comment "Author of book"
+field string --fieldName publishing --comment "Publishing house"
+field number --fieldName publicationYear --type java.lang.Integer  --comment "Year of publication"
+field number --fieldName pagesCount --type java.lang.Integer  --comment "Count of pages"
+field string --fieldName description --comment "Short description"
+field number --fieldName fileSize --type java.lang.Float  --comment "Size of original file"
+field string --fieldName fileFormat --sizeMax 20 --comment "Original file format"
+field string --fieldName isbn --sizeMax 100 --comment "Book ISBN"
+field string --fieldName bookPlace --sizeMax 100 --comment "Web-link to real book place"
+field number --fieldName ownerId --type java.lang.Long  --comment "Owner of book"
+test integration
+web mvc setup
+web mvc all --package ~.web
+entity jpa --class ~.domain.User --testAutomatically --permitReservedWords --table ts_users
+field string --fieldName firstName --sizeMin 1 --notNull
+field string --fieldName lastName --sizeMin 1 --notNull
+field string --fieldName emailAddress --sizeMin 1 --notNull --unique
+field string --fieldName password --sizeMin 1 --notNull
+field date --fieldName activationDate --type java.util.Date 
+field string --fieldName activationKey 
+field boolean --fieldName enabled 
+field boolean --fieldName locked 
+entity jpa --class ~.domain.Role --testAutomatically --permitReservedWords --table ts_roles
+field string --fieldName roleName --sizeMin 1 --notNull --unique
+field string --fieldName roleDescription --sizeMin --sizeMax 200 --notNull
+entity jpa --class ~.domain.UserRole --testAutomatically --table ts_userroles
+field reference --fieldName userEntry --type ~.domain.User --notNull
+field reference --fieldName roleEntry --type ~.domain.Role --notNull
+finder add findUsersByEmailAddress --class ~.domain.User
+finder add findUsersByActivationKeyAndEmailAddress --class ~.domain.User
+finder add findUserRolesByUserEntry --class ~.domain.UserRole
+web mvc controller --class ~.web.UserController
+web mvc scaffold --class ~.web.UserController --backingType ~.domain.User --path /admin/users
+web mvc controller --class ~.web.RoleController
+web mvc scaffold --class ~.web.RoleController --backingType ~.domain.Role --path /admin/roles
+web mvc controller --class ~.web.UserRoleController
+web mvc scaffold --class ~.web.UserRoleController --backingType ~.domain.UserRole --path /admin/userRoles
+security setup
+typicalsecurity setup --adminUsername admin8 --adminPassword admin8 --entityPackage ~.domain --controllerPackage ~.web
+email sender setup --hostServer smtp.gmail.com --protocol smtp --port 587 --username nurjan1000@gmail.com --password rain1000
+logging setup --level ERROR
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-06-16 18:24:04
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-06-20 15:04:33
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-06-20 15:22:51

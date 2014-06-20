@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_bmtech_books_domain_UserRole" modelAttribute="userRole" path="/admin/userRoles" versionField="Version" z="3DfHaGGWe6z4Z1dXsHHwUR2wRiI=">
+        <field:select field="userEntry" id="c_com_bmtech_books_domain_UserRole_userEntry" itemValue="id" items="${users}" path="/admin/users" required="true" z="NA85QmLjDIyswvM8BJF+Q+rq9s0="/>
+        <field:select field="roleEntry" id="c_com_bmtech_books_domain_UserRole_roleEntry" itemValue="id" items="${roles}" path="/admin/roles" required="true" z="kdgKlEQWBAhsdhM3zLIzba5iLMY="/>
+    </form:update>
+</div>

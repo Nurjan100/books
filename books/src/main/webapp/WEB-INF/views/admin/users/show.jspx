@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_bmtech_books_domain_User" object="${user}" path="/admin/users" z="3ELcQ/U98sZy6WWfSYv2ImfeYyA=">
+        <field:display field="firstName" id="s_com_bmtech_books_domain_User_firstName" object="${user}" z="UE6YnlVe9TxUdrUW9CY9ShtiTGQ="/>
+        <field:display field="lastName" id="s_com_bmtech_books_domain_User_lastName" object="${user}" z="X9IyfIqi/DYCAsEBhwZouHcxiz8="/>
+        <field:display field="emailAddress" id="s_com_bmtech_books_domain_User_emailAddress" object="${user}" z="KBOR9mRW4SFxCLAOgriy/n+cAfI="/>
+        <field:display field="password" id="s_com_bmtech_books_domain_User_password" object="${user}" z="GhrMWOCDWD1f4ST3V+zEFf6psgc="/>
+        <field:display date="true" dateTimePattern="${user_activationdate_date_format}" field="activationDate" id="s_com_bmtech_books_domain_User_activationDate" object="${user}" z="D16LG6tPyYyasGmKeNHWNUlqRjs="/>
+        <field:display field="activationKey" id="s_com_bmtech_books_domain_User_activationKey" object="${user}" z="GozLlhR9BTzGdhSzPsb6bOXiJU4="/>
+        <field:display field="enabled" id="s_com_bmtech_books_domain_User_enabled" object="${user}" z="c/KNGx/snydXOfuWQUY/UkvNkTM="/>
+        <field:display field="locked" id="s_com_bmtech_books_domain_User_locked" object="${user}" z="afZoHqsOywmKLhtyKwwuCEc4vtU="/>
+    </page:show>
+</div>

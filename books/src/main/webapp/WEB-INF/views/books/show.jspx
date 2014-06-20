@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_bmtech_books_domain_Book" object="${book}" path="/books" z="/3Nzjh4NQOr0J9uubDOUzDq5P38=">
+        <field:display field="categoryId" id="s_com_bmtech_books_domain_Book_categoryId" object="${book}" z="Itft2nezjbl0CI8TTaoG/LHXr78="/>
+        <field:display field="sectionId" id="s_com_bmtech_books_domain_Book_sectionId" object="${book}" z="EmUby9rvQ2WDHxLHXTGY44sikBs="/>
+        <field:display field="cover" id="s_com_bmtech_books_domain_Book_cover" object="${book}" z="j+3a625j1N+K+PVC6n0i99TCTCA="/>
+        <field:display field="title" id="s_com_bmtech_books_domain_Book_title" object="${book}" z="vYliMXxY2TPj3ok1J37+lIAcIYM="/>
+        <field:display field="author" id="s_com_bmtech_books_domain_Book_author" object="${book}" z="SATu36f3+pEzBH2k+DZ/uVWOhn8="/>
+        <field:display field="publishing" id="s_com_bmtech_books_domain_Book_publishing" object="${book}" z="zY2WiwzAsProULfgtRbUGaW7GvI="/>
+        <field:display field="publicationYear" id="s_com_bmtech_books_domain_Book_publicationYear" object="${book}" z="efCLrqrAfAJWI1KT3MnZSgbc7W4="/>
+        <field:display field="pagesCount" id="s_com_bmtech_books_domain_Book_pagesCount" object="${book}" z="aMgjJoyYiizUPaJke2amlwhJiJk="/>
+        <field:display field="description" id="s_com_bmtech_books_domain_Book_description" object="${book}" z="LsPJH817k/Zsu+b5Vf4W/nR2AKY="/>
+        <field:display field="fileSize" id="s_com_bmtech_books_domain_Book_fileSize" object="${book}" z="eJMe/CDEL/yE5aCJrR5QzV9cCPQ="/>
+        <field:display field="fileFormat" id="s_com_bmtech_books_domain_Book_fileFormat" object="${book}" z="nABfI4yu0RaJ1thLgAHeM3/i8uk="/>
+        <field:display field="isbn" id="s_com_bmtech_books_domain_Book_isbn" object="${book}" z="H0LMQpo+8UBrer1BxB0h8wq/IEc="/>
+        <field:display field="bookPlace" id="s_com_bmtech_books_domain_Book_bookPlace" object="${book}" z="+5eItX5Xr9VVvC+L1wckIH1YiKE="/>
+        <field:display field="ownerId" id="s_com_bmtech_books_domain_Book_ownerId" object="${book}" z="qdinTF31k8yiyI+T2wEVYi1TsEI="/>
+    </page:show>
+</div>

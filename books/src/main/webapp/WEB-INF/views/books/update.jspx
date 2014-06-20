@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_bmtech_books_domain_Book" modelAttribute="book" path="/books" versionField="Version" z="vfaxuVnwPFtvGs3e0cViMhV1UbE=">
+        <field:input field="categoryId" id="c_com_bmtech_books_domain_Book_categoryId" validationMessageCode="field_invalid_integer" z="urCv0HWI4XWe5D9Eky/T9n2ExvI="/>
+        <field:input field="sectionId" id="c_com_bmtech_books_domain_Book_sectionId" validationMessageCode="field_invalid_integer" z="xr0SoGtLF/z/4zKvLNA533VtdaU="/>
+        <field:textarea field="cover" id="c_com_bmtech_books_domain_Book_cover" z="Qx3AFRnjPkogtWTQmcXApxOuwUc="/>
+        <field:input field="title" id="c_com_bmtech_books_domain_Book_title" z="kcJuIC30LwV518Fb9d6Y2HrXsXc="/>
+        <field:input field="author" id="c_com_bmtech_books_domain_Book_author" z="nhbNBQsQW071ISdQrhQj9I88Er8="/>
+        <field:input field="publishing" id="c_com_bmtech_books_domain_Book_publishing" z="w/xZ22BuCIayOYIkV18DTZzZAJU="/>
+        <field:input field="publicationYear" id="c_com_bmtech_books_domain_Book_publicationYear" validationMessageCode="field_invalid_integer" z="wKc5VKc8bYaqT7ji+jG4zQ3/nnU="/>
+        <field:input field="pagesCount" id="c_com_bmtech_books_domain_Book_pagesCount" validationMessageCode="field_invalid_integer" z="EhmBwwoOXNliPV+QlYAVKwjHCtA="/>
+        <field:input field="description" id="c_com_bmtech_books_domain_Book_description" z="u2rCVZmDq8Y4D1N9hfJFzxbi85c="/>
+        <field:input field="fileSize" id="c_com_bmtech_books_domain_Book_fileSize" validationMessageCode="field_invalid_number" z="A6RfcZlaUFd27qnI1B0lwogueII="/>
+        <field:input field="fileFormat" id="c_com_bmtech_books_domain_Book_fileFormat" max="20" z="/QOGszpbP2wZh5GvDJzumcdZlOo="/>
+        <field:textarea field="isbn" id="c_com_bmtech_books_domain_Book_isbn" z="jlK8ihJGbv5JjcaXdzJI5/3zKso="/>
+        <field:textarea field="bookPlace" id="c_com_bmtech_books_domain_Book_bookPlace" z="LvbngFOJt86dJ899CJ5cwBbSG00="/>
+        <field:input field="ownerId" id="c_com_bmtech_books_domain_Book_ownerId" validationMessageCode="field_invalid_integer" z="0eeiOQJ65B0kphPC8HyVDHGdjTc="/>
+    </form:update>
+</div>
