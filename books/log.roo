@@ -55,3 +55,14 @@ logging setup --level ERROR
 // Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-06-16 18:24:04
 // Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-06-20 15:04:33
 // Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-06-20 15:22:51
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-06-20 16:55:00
+selenium test --controller ~.web.BookController
+entity jpa --class ~.domain.UserBook --testAutomatically
+field number --fieldName userId --type java.lang.Long --comment "ID of User"
+field number --fieldName bookId --type java.lang.Long --comment "ID of Book"
+field date --fieldName added --type java.util.Date
+field date --fieldName lastOpened --type java.util.Date
+field number --fieldName openCounts --type java.lang.Long
+field number --fieldName currentPage --type java.lang.Long
+field number --fieldName status --type java.lang.Long
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-06-20 18:05:25
